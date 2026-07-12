@@ -1,0 +1,14 @@
+name: metabolomics_nightingale
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.4
+  - r-irkernel          # R kernel for Jupyter
+  - r-tidyverse
+#  - r-survival
+#  - r-broom
+  - r-ggforestplot      # may need r-universe or install in notebook
+  - r-nhanesa
+  - jupyterlab
+  - notebook
