@@ -1,23 +1,28 @@
 # metabolomics_nightingale
-This repo aims to reproduce Nightingale Health's tutorial for analysing metabolomics data which has been posted here: https://nightingalehealth.github.io/ggforestplot/articles/nmr-data-analysis-tutorial.html
 
-The implementation is done in a Jupyter notebook running on an R Kernel.
+This repo follows the structure of the [Nightingale Health NMR Data Analysis Tutorial](https://nightingalehealth.github.io/ggforestplot/articles/nmr-data-analysis-tutorial.html), applying the same analytical approach to publicly available data from [NHANES 2017-2018](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2017).
 
-It is also done using a Conda environment for reproducibility. In order to run this, you will need to have conda installed
+The analysis covers: data download, preprocessing, linear regression of biomarkers against BMI, Benjamini-Hochberg FDR correction, forest plot visualisation, and logistic regression for type 2 diabetes.
 
-The data used is ETC ETC ETC
+## Requirements
 
-### Installing conda
+- [conda](https://docs.conda.io/en/latest/miniconda.html)
 
-```
-Instructions to install conda
-```
+## Setup
 
-### Running the Jupyter notebook
+Create and activate the conda environment:
 
 ```
-Instruction, activate conda environment
-run the Jupyter notebook ## where will this run?
+conda env create -f environment.yaml
+conda activate metabolomics_nightingale
 ```
+
+## Running the notebook
+
+```
+jupyter lab
+```
+
+Then open `analysis.ipynb` and select the **R** kernel. Run the setup cell first. Note that it will install `nhanesA` and `ggforestplot` on first run (so it might take a couple of minutes).
 
 
