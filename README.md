@@ -1,8 +1,8 @@
-# metabolomics_nightingale
+# Nhanes Dataset Biomarker Analysis
 
 ## Research question
 
-Which standard clinical biomarkers are associated with BMI, and which are associated with diagnosed diabetes, when the workflow of the Nightingale Health NMR metabolomics tutorial is applied to a public clinical dataset?
+Which standard clinical biomarkers are associated with BMI, and which are associated with diagnosed diabetes, using a public clinical dataset (NHANES 2017-2018)?
 
 ## Data
 
@@ -12,7 +12,7 @@ Which standard clinical biomarkers are associated with BMI, and which are associ
 
 **Modules used:** Demographics (DEMO_J), body measures (BMX_J), fasting glucose (GLU_J), HbA1c (GHB_J), total cholesterol (TCHOL_J), HDL (HDL_J), LDL and triglycerides (TRIGLY_J), hsCRP (HSCRP_J), diabetes questionnaire (DIQ_J).
 
-**Size:** 9,254 participants at download. The analysis is restricted to the 2,738 participants with all seven biomarkers available. Glucose, LDL and triglycerides were measured only in people who fasted, which is why most participants are excluded. Participants are aged 12 to 80 (median 47). Adolescents (12 to 17) are included, and NHANES records every age above 80 as 80.
+**Size:** 9,254 participants at download time. The analysis is restricted to the 2,738 participants with all seven biomarkers available. Glucose, LDL and triglycerides were measured only in people who fasted, which is why most participants are excluded. Participants are aged 12 to 80 (median 47). Adolescents (12 to 17) are included, and NHANES records every age above 80 as 80.
 
 **Note on scope:** NHANES provides standard clinical biomarkers (HbA1c, total cholesterol, HDL, LDL, triglycerides, hsCRP, glucose). It does not include NMR metabolomics. This repo applies the [Nightingale Health NMR tutorial](https://nightingalehealth.github.io/ggforestplot/articles/nmr-data-analysis-tutorial.html) workflow as a methods exercise on a comparable dataset; it does not replicate Nightingale's NMR panel.
 
