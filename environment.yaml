@@ -4,10 +4,10 @@ channels:
   - defaults
 dependencies:
   - r-base=4.4
-  - r-irkernel          # R kernel for Jupyter
-  - r-tidyverse
-  - jupyterlab
-  - notebook
+  - r-irkernel>=1.3     # R kernel for Jupyter
+  - r-tidyverse>=2.0
+  - jupyterlab>=4.0
+  - notebook>=7.0
 # Some packages are not on conda-forge and will be installed
 # via install.packages() in the notebook:
 #   - ggforestplot  (GitHub: nightingalehealth/ggforestplot)
